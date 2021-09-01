@@ -20,7 +20,6 @@ body {
 
 a, a:visited, a:hover {
   text-decoration: none;
-  color: black;
 }
 
 .flex {
@@ -47,6 +46,33 @@ a, a:visited, a:hover {
           align-items: center;
 }
 
+.button {
+  padding: 0.625rem;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white !important;
+  background-color: #39BB97;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .header__logo {
   position: relative;
   height: 50px;
@@ -58,28 +84,74 @@ a, a:visited, a:hover {
 
 .header__links {
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .header__links a {
+  position: relative;
+  color: black;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
   margin-right: 2rem;
 }
 
-.header button {
-  padding: 0.625rem;
-  margin-right: 50px;
-  border-radius: 5px;
-  border: none;
+.header__links a:hover {
+  color: #7a7474;
 }
 
-.header__hamburger span {
+.header__links a::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #39BB97;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.11, 0.7, 0, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0.11, 0.7, 0, 1);
+  transition: transform 0.8s cubic-bezier(0.11, 0.7, 0, 1);
+  transition: transform 0.8s cubic-bezier(0.11, 0.7, 0, 1), -webkit-transform 0.8s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+.header__links a:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.header__hamburger > span {
   display: block;
   background-color: black;
   width: 26px;
   height: 2px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 3px 1px;
+          transform-origin: 3px 1px;
 }
 
-.header__hamburger span:not(:last-child) {
+.header__hamburger > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__hamburger.open > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__hamburger.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__hamburger.open > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=style.css.map */
