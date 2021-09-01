@@ -46,6 +46,12 @@ a, a:visited, a:hover {
           align-items: center;
 }
 
+.flex-justify-e {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .button {
   padding: 0.625rem;
   border-radius: 5px;
@@ -80,6 +86,7 @@ a, a:visited, a:hover {
 @media (max-width: 63.9375em) {
   .header .fixed {
     position: fixed;
+    top: 0;
     background-color: white;
     width: 100%;
   }
@@ -107,19 +114,18 @@ a, a:visited, a:hover {
 .header__menu_mobile {
   position: fixed;
   top: 6.125rem;
-  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.507)), to(rgba(255, 255, 255, 0.507)));
+  background: linear-gradient(rgba(255, 255, 255, 0.507), rgba(255, 255, 255, 0.507));
   padding: 1.625rem;
-  margin-left: 24.0625rem;
+  margin: 200% 0 0 0;
   height: 100%;
-  width: 20vh;
+  width: 100%;
   font-size: 20px;
   font-weight: 600;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .header__menu_mobile_active {
-  margin-left: 13.0625rem;
+  margin: 0;
 }
 
 .header__menu_mobile a {
@@ -191,5 +197,26 @@ a, a:visited, a:hover {
 
 .header__hamburger > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.hero_container {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 30%;
+  border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */

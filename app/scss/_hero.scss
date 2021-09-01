@@ -1,0 +1,15 @@
+.hero_container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-grow: 1;   
+    height: 30%;
+    border: 1px solid red;
+}

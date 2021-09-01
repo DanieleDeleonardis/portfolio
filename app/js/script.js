@@ -6,6 +6,7 @@ let menuMobile = document.querySelector('.header__menu_mobile');
 hamburgerBtn.addEventListener('click', () => {
     header.classList.toggle('open');
     menuMobile.classList.toggle('header__menu_mobile_active');
+    menuMobile.style.transition = "all 0.5s ease"
 })
 
 linkMenuMobile.addEventListener('click', () => {
@@ -13,4 +14,5 @@ linkMenuMobile.addEventListener('click', () => {
     // menuMobile.classList.toggle('header__menu_mobile_active');
     alert('we')
 })
+
 
