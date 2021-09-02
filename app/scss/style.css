@@ -12,8 +12,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Geomanist', sans-serif;
   font-size: 1.125rem;
+  font-weight: 900;
   color: black;
   background-color: #F6F6F6;
 }
@@ -52,7 +53,38 @@ a, a:visited, a:hover {
           justify-content: flex-end;
 }
 
+.main_container {
+  width: 100%;
+  margin-top: 100px;
+  padding: 24px;
+}
+
+.main_container .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 39.9375em) {
+  .main_container .wrap__responsive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main_container .column-50 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border: 1px solid red;
+}
+
 .button {
+  display: inline-block;
   padding: 0.625rem;
   border-radius: 5px;
   font-size: 20px;
@@ -113,15 +145,14 @@ a, a:visited, a:hover {
 
 .header__menu_mobile {
   position: fixed;
+  right: 0;
   top: 6.125rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.507)), to(rgba(255, 255, 255, 0.507)));
-  background: linear-gradient(rgba(255, 255, 255, 0.507), rgba(255, 255, 255, 0.507));
+  background: white;
   padding: 1.625rem;
-  margin: 200% 0 0 0;
+  margin: 0 -500px 0 0;
   height: 100%;
-  width: 100%;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .header__menu_mobile_active {
@@ -199,24 +230,14 @@ a, a:visited, a:hover {
   margin-bottom: 5px;
 }
 
-.hero_container {
-  width: 100%;
-  margin-top: 100px;
+.hero_text {
+  padding: 0 50px 0 50px;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.col {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: 30%;
-  border: 1px solid red;
+.hero_image {
+  padding: 0 50px 0 50px;
+  background-image: url("/img/hero.jpg");
+  background-size: cover;
+  min-height: 17.5rem;
 }
 /*# sourceMappingURL=style.css.map */
