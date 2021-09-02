@@ -234,6 +234,12 @@ a, a:visited, a:hover {
   padding: 0 50px 0 50px;
 }
 
+@media (max-width: 39.9375em) {
+  .hero_text {
+    padding: 0;
+  }
+}
+
 .hero_image {
   padding: 0 50px 0 50px;
   background-image: url("/img/hero.jpg");
