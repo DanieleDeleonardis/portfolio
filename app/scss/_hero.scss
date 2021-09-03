@@ -4,6 +4,14 @@
         flex: 50%;   
     }
 
+    &__100 {
+        flex: 100%;
+    }
+
+    &__centerTxt {
+        text-align: center;
+    }
+
 }
 
 
@@ -18,17 +26,6 @@
 
     @include breakpoint-down(small) {
         padding: 0;
-    }
-
-    h1 {
-        margin-top: 0;
-        font-family: 'Anton', sans-serif;
-        font-size: 45px; 
-        margin-bottom: 0;
-
-        @include breakpoint-down(small) {
-            font-size: 40px;
-        }
     }
 
     .pulse_text {
@@ -50,8 +47,11 @@
 
 .hero_image {
     padding: 0 50px 0 50px;
-    background-image: url('/img/hero.jpg');
+    background-image: linear-gradient(rgba(78, 78, 78, 0.089)), url('/img/hero.jpg');
     background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 17px -11px rgba(0,0,0,0.52);
+    border-radius: 5px;
     min-height: 37.5rem;
     @include breakpoint-up(large) {
         order: 2;

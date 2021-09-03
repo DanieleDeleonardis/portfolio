@@ -30,6 +30,17 @@ p {
     color: rgba(0, 0, 0, 0.705);
 }
 
+h1 {
+    margin-top: 0;
+    font-family: 'Anton', sans-serif;
+    font-size: 45px; 
+    margin-bottom: 0;
+
+    @include breakpoint-down(small) {
+        font-size: 40px;
+    }
+}
+
 .flex{
     display: flex;
 
@@ -54,10 +65,40 @@ p {
 .main_container {
     min-height: 100vh;
     width: 100%;
-    padding: 0 24px 0 24px;
+    padding: 0 130px 0 24px;
     
     @include breakpoint-down(small) {
         padding: 104px 24px 0 24px;
+    }
+    
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 24px 0 24px;
+    
+    @include breakpoint-down(small) {
+        padding: 0px 24px 0 24px;
+    }
+
+    &__h0 {
+        width: 100%;
+        padding: 0 24px 0 24px;
+    
+        @include breakpoint-down(small) {
+            padding: 0px 24px 0 24px;
+        }
+    }
+
+    &__h50 {
+        min-height: 50vh;
+        width: 100%;
+        padding: 0 24px 0 24px;
+    
+        @include breakpoint-down(small) {
+            padding: 0px 24px 0 24px;
+        }
     }
     
 }
@@ -69,6 +110,15 @@ p {
     @include breakpoint-down(small) {
         margin-top: 0px;
         min-height: 80vh;
+    }
+
+    &__h50 {
+        flex-wrap: wrap;
+        
+        @include breakpoint-down(small) {
+            margin-top: 0px;
+            
+        } 
     }
     
 }
