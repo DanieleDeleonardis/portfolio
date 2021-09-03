@@ -360,8 +360,8 @@ h1 {
 
 .hero_image {
   padding: 0 50px 0 50px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(78, 78, 78, 0.089))), url("/img/hero.jpg");
-  background-image: linear-gradient(rgba(78, 78, 78, 0.089)), url("/img/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(78, 78, 78, 0.089))), url("./img/hero.jpg");
+  background-image: linear-gradient(rgba(78, 78, 78, 0.089)), url("./img/hero.jpg");
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.52);
