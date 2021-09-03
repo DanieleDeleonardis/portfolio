@@ -62,16 +62,7 @@ h1 {
 
 }
 
-.main_container {
-    min-height: 100vh;
-    width: 100%;
-    padding: 0 130px 0 24px;
-    
-    @include breakpoint-down(small) {
-        padding: 104px 24px 0 24px;
-    }
-    
-}
+
 
 .container {
     min-height: 100vh;

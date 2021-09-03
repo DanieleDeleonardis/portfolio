@@ -14,23 +14,26 @@
 
 }
 
-
-.hero_text {
-    padding: 0 50px 0 50px;
+.hero_container {
+    padding: 104px 24px 0 24px;
 
     @include breakpoint-up(large) {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    
+}
+
+
+.hero_text {
+
+    @include breakpoint-up(large) {
+        flex: 1;
         order: 1;
         padding: 0 50px 0 160px;
 
-    }
-
-    @include breakpoint-down(small) {
-        padding: 0;
-    }
-
-    .pulse_text {
-        color: rgba(57, 187, 151, 1);
-        animation: pulse 3s infinite;   
     }
 
     a{
@@ -39,7 +42,13 @@
         &:hover {
             color: rgb(122, 116, 116);
         }
-    }  
+    } 
+
+    .pulse_text {
+        color: rgba(57, 187, 151, 1);
+        animation: pulse 3s infinite;   
+    }
+ 
 }
 
 
@@ -54,6 +63,7 @@
     border-radius: 5px;
     min-height: 37.5rem;
     @include breakpoint-up(large) {
+        flex: 1;
         order: 2;
     }
 
