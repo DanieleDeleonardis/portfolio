@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet"> -->
-    <link href="http://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="./app/scss/style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -49,22 +57,19 @@
     </header>
 
     <section class="main_container">
-        <div class="wrap wrap__responsive">
-            <div class="column-50 hero_image">
-                
+        <div class="sub_container flex flex-aling-i">
+            <div class="column__50 hero_image">
+                <!-- <img src="./img/hero.jpg" alt=""> -->
             </div>
-            <div class="column-50 hero_text">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="#" class="button hide-for-mobile">Scarica CV</a>
+            <div class="column__50 hero_text">
+                <h1>👋 Hola sono <span class="move_text">Daniele</span> e sono uno sviluppatore Fullstack</h1>
+                <a href="#" class="button__cta"><i class="fas fa-chevron-down"></i> ABOUT</a>
             </div>
         </div>
 
     </section>
 
-
+    <div id="clock" class="clock" onload="showTime()"></div>
     <script src="./app/js/script.js"></script>
 </body>
 </html>
