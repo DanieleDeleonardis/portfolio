@@ -1,0 +1,18 @@
+// color pulse text hero
+
+@keyframes pulse {
+	0% {
+		color:rgba(57, 187, 151, 0.7);
+	}
+
+	70% {
+        color: rgb(55, 55, 55);
+
+	}
+
+	0% {
+		color: rgba(57, 187, 151, 1);
+        
+	}
+ 
+}

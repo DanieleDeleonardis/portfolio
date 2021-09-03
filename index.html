@@ -22,30 +22,24 @@
 <body>
     <header class="header">
 
-        <!-- <div class="overlay">
-            
-        </div> -->
-
         <nav class="flex flex-justify-sb flex-aling-i fixed">
             <a href="#" class="header__logo">
                 <img src="./img/logoD.png" width="50" alt="logo">
             </a>
-
             <div id="hamburgerBtn" class="header__hamburger hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
             <div class="header__links hide-for-mobile">
                 <a href="#">ABOUT</a>
                 <a href="#">PROJECT</a>
                 <a href="#">SKILLS</a>
             </div>
-            <a href="#" class="button hide-for-mobile">Scarica CV</a>
-
+            <a href="#" class="button hide-for-mobile">SCARICA CV</a>
         </nav>
 
+        <!-- Mobile nav -->
         <div class="header__menu_mobile hide-for-desktop">
             <div class="img">
             </div>
@@ -53,23 +47,23 @@
             <a href="#">PROJECT</a>
             <a href="#">SKILLS</a>
         </div>
+        <!-- // -->
 
     </header>
 
     <section class="main_container">
-        <div class="sub_container flex flex-aling-i">
+        <div class="sub_container flex flex-aling-i flex-justify-c">
             <div class="column__50 hero_image">
-                <!-- <img src="./img/hero.jpg" alt=""> -->
+                
             </div>
             <div class="column__50 hero_text">
-                <h1>👋 Hola sono <span class="move_text">Daniele</span> e sono uno sviluppatore Fullstack</h1>
-                <a href="#" class="button__cta"><i class="fas fa-chevron-down"></i> ABOUT</a>
+                <span style="font-size: 39px;">👋</span>
+                <h1>Hola sono <span class="pulse_text">Daniele</span>,<br>sviluppatore Fullstack</h1>
+                <a href="#" class="button__cta"><i class="fas fa-arrow-right"></i> ABOUT</a>
             </div>
         </div>
-
     </section>
 
-    <div id="clock" class="clock" onload="showTime()"></div>
     <script src="./app/js/script.js"></script>
 </body>
 </html>

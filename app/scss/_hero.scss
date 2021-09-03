@@ -8,17 +8,22 @@
 
 
 .hero_text {
-    margin: auto;
     padding: 0 50px 0 50px;
+
+    @include breakpoint-up(large) {
+        order: 1;
+        padding: 0 50px 0 160px;
+
+    }
 
     @include breakpoint-down(small) {
         padding: 0;
     }
 
     h1 {
+        margin-top: 0;
         font-family: 'Anton', sans-serif;
-        font-size: 45px;
-        
+        font-size: 45px; 
         margin-bottom: 0;
 
         @include breakpoint-down(small) {
@@ -26,54 +31,35 @@
         }
     }
 
-    p {
-        
+    .pulse_text {
+        color: rgba(57, 187, 151, 1);
+        animation: pulse 3s infinite;   
     }
+
+    a{
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+            color: rgb(122, 116, 116);
+        }
+    }  
 }
 
-.move_text {
-	// background: black;
-	color: rgba(57, 187, 151, 1);
-	animation: pulse 3s infinite;
-    
-}
 
-@keyframes pulse {
-	0% {
-		color:rgba(57, 187, 151, 0.7);
-	}
 
-	70% {
-        color: rgb(55, 55, 55);
-
-	}
-
-	0% {
-		color: rgba(57, 187, 151, 1);
-        
-	}
-
-    
-}
 
 .hero_image {
     padding: 0 50px 0 50px;
     background-image: url('/img/hero.jpg');
     background-size: cover;
+    min-height: 37.5rem;
+    @include breakpoint-up(large) {
+        order: 2;
+    }
 
     @include breakpoint-down(small) {
         padding: 0;
-        min-height: 24.5rem;
+        min-height: 19.5rem;
         }
-    
-    // background-image: url('/img/hero.jpg');
-    // background-size: cover;
-    min-height: 37.5rem;
 }
 
-.clock {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-}
