@@ -37,7 +37,7 @@ h1 {
     margin-bottom: 0;
 
     @include breakpoint-down(small) {
-        font-size: 40px;
+        font-size: 32px;
     }
 }
 
@@ -105,11 +105,20 @@ h1 {
 
     &__h50 {
         flex-wrap: wrap;
-        
-        @include breakpoint-down(small) {
-            margin-top: 0px;
-            
-        } 
+        margin-top: 0px;
+
+        h2 {
+            display: none;
+    
+            @include breakpoint-up(large) {
+                display: block;
+                
+            } 
+        }
+
+        p {
+            margin: 0 0 0 0;
+        }
     }
     
 }
