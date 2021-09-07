@@ -22,6 +22,6 @@ hamburgerBtn.addEventListener('click', () => {
 body.addEventListener("click", (e) => {
     if (!e.target.classList.contains('header__menu_mobile_active')) {
         // menuMobile.classList.remove('header__menu_mobile_active');
-        console.log('we');
+        // alert('we');
     }
   });

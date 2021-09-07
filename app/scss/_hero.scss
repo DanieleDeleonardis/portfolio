@@ -1,26 +1,29 @@
-.column {
+// .column {
 
-    &__50 {
-        flex: 50%;   
-    }
+//     &__50 {
+//         flex: 50%;   
+//     }
 
-    &__100 {
-        flex: 100%;
-    }
+//     &__100 {
+//         flex: 100%;
+//     }
 
-    &__centerTxt {
-        text-align: center;
-    }
+//     &__centerTxt {
+//         text-align: center;
+//     }
 
-}
+// }
 
 .hero_container {
-    padding: 104px 24px 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 6.5rem 1.5rem 0 1.5rem;
 
     @include breakpoint-up(large) {
-        height: 100vh;
-        display: flex;
         align-items: center;
+        margin: 0 6.25rem 0 6.25rem;
+        height: 100vh;
     }
 
     
@@ -29,12 +32,12 @@
 
 .hero_text {
 
-    margin: 30px 0 30px 0;
+    margin: 1.875rem 0 1.875rem 0;
 
     @include breakpoint-up(large) {
         flex: 1;
         order: 1;
-        padding: 0 50px 0 160px;
+        // padding: 0 50px 0 160px;
 
     }
 
@@ -54,7 +57,7 @@
     } 
 
     .pulse_text {
-        color: rgba(57, 187, 151, 1);
+        color: $mainGreen;
         animation: pulse 3s infinite;   
     }
  
@@ -64,22 +67,23 @@
 
 
 .hero_image {
-    padding: 0 50px 0 50px;
-    background-image: linear-gradient(rgba(78, 78, 78, 0.089)), url('/img/hero.jpg');
+    padding: 0 3.125rem 0 3.125rem;
+    background: linear-gradient(to top, #f6f6f6, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('/img/hero.jpg');
     background-size: cover;
     background-position: center;
-    box-shadow: 10px 10px 17px -11px rgba(0,0,0,0.52);
+    // box-shadow: 0.625rem 0.625rem 1.0625rem -0.6875rem rgba(0,0,0,0.52);
     border-radius: 5px;
     min-height: 37.5rem;
+    flex: 100%;
     @include breakpoint-up(large) {
         flex: 1;
         order: 2;
     }
 
     @include breakpoint-down(small) {
-        padding: 0;
-        min-height: 19.5rem;
-        margin-top: 30px;
+        // padding: 0;
+        // min-height: 19.5rem;
+        // margin-top: 1.875rem;
         }
 }
 
