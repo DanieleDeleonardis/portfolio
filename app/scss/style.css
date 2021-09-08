@@ -40,7 +40,7 @@ h1 {
 
 @media (max-width: 39.9375em) {
   h1 {
-    font-size: 2rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -189,7 +189,13 @@ h1 {
 }
 
 .header nav {
-  padding: 24px;
+  padding: 15px 24px 15px 24px;
+}
+
+@media (min-width: 64em) {
+  .header nav {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 63.9375em) {
@@ -318,11 +324,12 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 6.5rem 1.5rem 0 1.5rem;
+  padding: 6.5rem 1rem 0 1rem;
 }
 
 @media (min-width: 64em) {
   .hero_container {
+    padding: 6.5rem 1.5rem 0 1.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

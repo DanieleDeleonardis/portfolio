@@ -37,7 +37,7 @@ h1 {
     margin-bottom: 0;
 
     @include breakpoint-down(small) {
-        font-size: 2rem;
+        font-size: 3.7rem; //1.7rem; 
     }
 }
 
