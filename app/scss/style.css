@@ -30,6 +30,12 @@ p {
   color: rgba(0, 0, 0, 0.705);
 }
 
+@media (min-width: 64em) {
+  p {
+    width: 80%;
+  }
+}
+
 h1 {
   margin-top: 0;
   font-family: 'Anton', sans-serif;
@@ -40,7 +46,7 @@ h1 {
 
 @media (max-width: 39.9375em) {
   h1 {
-    font-size: 3.7rem;
+    font-size: 3rem;
   }
 }
 

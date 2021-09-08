@@ -27,6 +27,10 @@ p {
     font-family: 'Urbanist', sans-serif;
     font-weight: 200;
     color: $second-black-txt;
+
+    @include breakpoint-up(large) {
+        width: 80%;
+    }
 }
 
 h1 {
@@ -37,7 +41,7 @@ h1 {
     margin-bottom: 0;
 
     @include breakpoint-down(small) {
-        font-size: 3.7rem; //1.7rem; 
+        font-size: 3rem; //1.7rem; 
     }
 }
 
