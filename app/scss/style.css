@@ -318,7 +318,6 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 100vh;
   padding: 6.5rem 1.5rem 0 1.5rem;
 }
 
@@ -327,8 +326,9 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 6.25rem 0 6.25rem;
-    height: 100vh;
+    margin: auto;
+    max-width: 1440px;
+    min-height: 100vh;
   }
 }
 
@@ -370,16 +370,11 @@ h1 {
 }
 
 .hero_image {
-  padding: 0 3.125rem 0 3.125rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f6f6f6), color-stop(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("/img/hero.jpg");
-  background: linear-gradient(to top, #f6f6f6, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/img/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  min-height: 37.5rem;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  margin-bottom: 1.875rem;
+  text-align: center;
 }
 
 @media (min-width: 64em) {
@@ -390,6 +385,17 @@ h1 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+}
+
+.hero_image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media (min-width: 64em) {
+  .hero_image img {
+    width: 600px;
   }
 }
 
