@@ -3,8 +3,9 @@
     width: 100%;
     z-index: 10;
 
-    nav{
+    .nav{
         padding: 15px 24px 15px 24px;
+        transition: top 0.3s;
 
         @include breakpoint-up(large) {
             padding: 24px;

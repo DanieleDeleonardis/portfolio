@@ -7,11 +7,7 @@
     <!-- font 1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- font 2 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -22,7 +18,7 @@
 <body>
     <header class="header">
 
-        <nav class="flex flex-justify-sb flex-aling-i fixed">
+        <nav class="nav flex flex-justify-sb flex-aling-i fixed">
             <a href="#" class="header__logo">
                 <img src="./img/logoD.png" width="50" alt="logo">
             </a>
@@ -55,9 +51,10 @@
         <!-- <div class="sub_container flex flex-aling-i flex-justify-c"> -->
             <div class="hero_text">
                 <span style="font-size: 39px;">👋</span>
-                <h1>Hola mi chiamo <span class="pulse_text">Daniele</span></h1>   <!-- ,<br>Full Stack Developer -->
+                <h1>Hola, <br> sono <span class="pulse_text">Daniele</span></h1>   <!-- ,<br>Full Stack Developer -->
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad totam eius voluptatem a quas. Adipisci repudiandae dolore, odio tempora rerum deleniti eius voluptate</p>
-                <a href="#" class="button__cta"><i class="fas fa-arrow-right"></i> ABOUT</a>
+                <a href="#" class="button__cta hide-for-mobile"><i class="fas fa-arrow-right"></i> ABOUT</a>
+                <a href="#" class="button">SCARICA CV</a>
             </div>
             <div class="hero_image hide-for-mobile">
                 <img src="./img/hero.jpg" alt="">
@@ -65,12 +62,20 @@
         <!-- </div> -->
     </section>
 
-    <!-- <section class="intro_container">
+    <section class="intro_container">
         <div class="sub_container__h50 flex flex-aling-i flex-justify-c">
             <h2>ABOUT</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad totam eius voluptatem a quas. Adipisci repudiandae dolore, odio tempora rerum deleniti eius voluptate veniam voluptatum, blanditiis recusandae nihil repellat ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. In suscipit nam saepe debitis ratione, magni, totam ad soluta repellendus minus harum architecto fuga accusantium aperiam, itaque dicta nulla voluptas unde.</p>
         </div>
-    </section> -->
+    </section>
+
+    <section class="intro_container">
+        <div class="sub_container__h50 flex flex-aling-i flex-justify-c">
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad totam eius voluptatem a quas. Adipisci repudiandae dolore, odio tempora rerum deleniti eius voluptate veniam voluptatum, blanditiis recusandae nihil repellat ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. In suscipit nam saepe debitis ratione, magni, totam ad soluta repellendus minus harum architecto fuga accusantium aperiam, itaque dicta nulla voluptas unde.</p>
+        </div>
+    </section>
+
 
     <script src="./app/js/script.js"></script>
 </body>
